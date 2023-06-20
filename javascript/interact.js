@@ -27,7 +27,6 @@ function _check_action(action) {
 
 async function user_interact() {
   const action = await get_user_action();
-  console.log(action);
   if (action === "add") {
     const taskName = await askQuestion("Task name: ");
     const dueDate = await askQuestion("Due date: ");
